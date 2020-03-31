@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Наше кино - прекрасные фильмы со всех стран мира</title>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body id="top">
+    <header id="home">
+      <nav>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+              <nav class="pull">
+                <ul class="top-nav">
+                  <li><a href="#">Главная <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#">Вход <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#">Новости <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#">Статьи <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#">Видео <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#">Афиша <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#">О нас <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="topbar" id="topbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-right navicon">
+              <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center inner">
+              <h1 class="animated fadeInDown">НАШЕ КИНО</h1>
+              <p class="animated fadeInUp delay-05s">Фильмы для всех и каждого</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="route text-center section-padding" id="route">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 wp1">
+            <div class="tab">
+              <button class="tablinks" id="show-all-films-button">Все фильмы</button>
+              <button class="tablinks" id="show-desired-films-button">Список желаемых</button>
+            </div>
+            <div class='sort-form'>
+              <button class="btn btn-primary" id="button-sort-by-year">Сортировать по году выпуска</button>
+              <button class="btn btn-primary" id="button-sort-by-rating">Сортировать по рейтингу</button>
+            </div>
+            <div class='filter-form'>
+              <dl class="dropdown" id="genre-filter">
+                <dt>
+                <a href="#">
+                  <span class="hida">Выберите жанры</span>    
+                  <p class="multiSel"></p>  
+                </a>
+                </dt>
+                <dd>
+                  <div class="mutliSelect">
+                    <ul>
+                      <li>
+                        <input type="checkbox" value="Боевик"/>Боевик</li>
+                      <li>
+                        <input type="checkbox" value="Военный"/>Военный</li>
+                      <li>
+                        <input type="checkbox" value="Драма"/>Драма</li>
+                      <li>
+                        <input type="checkbox" value="Комедия"/>Комедия</li>
+                      <li>
+                        <input type="checkbox" value="Приключения"/>Приключения</li>
+                      <li>
+                        <input type="checkbox" value="Фэнтэзи"/>Фэнтэзи</li>
+                      <li>
+                        <input type="checkbox" value="Мелодрама"/>Мелодрама</li>
+                      <li>
+                        <input type="checkbox" value="Фантастика"/>Фантастика</li>
+                      <li>
+                        <input type="checkbox" value="Триллер"/>Триллер</li>
+                    </ul>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <button class='btn btn-primary' id='search-button'>Найти</button>
+            <button class='btn btn-primary' id='search-button'>Очистить фильтры</button>
+            <div id="films-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features text-center section-padding" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="arrow">Выбор редакции</h1>
+            <div id="features-wrapper">
+              <div class="col-md-4 wp2">
+                <div class="icon">
+                  <i class="fa fa-youtube-play"></i>
+                </div>
+                <h2>Тизер-трейлеры</h2>
+                <p>Узнайте, что готовит для нас мировая киноиндустрия</p>
+              </div>
+              <div class="col-md-4 wp2 delay-05s">
+                <div class="icon">
+                  <i class="fa fa-home"></i>
+                </div>
+                <h2>Домашний кинотеатр</h2>
+                <p>Смотрите любимые фильмы дома со всей семьей! Лучшее решение в условиях карантина</p>
+              </div>
+              <div class="col-md-4 wp2 delay-1s">
+                <div class="icon">
+                  <i class="fa fa-calendar"></i>
+                </div>
+                <h2>Календарь релизов</h2>
+                <p>Будьте в курсе всех мировых премьер</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="arrow">Контакты редакции</h1>
+          </div>
+        </div>
+        <div class="row contact-details">
+          <div class="col-md-4">
+            <div class="light-box box-hover">
+              <h2><i class="fa fa-map-marker"></i><span>Адрес</span></h2>
+              <p>222015, Минск, ул. Козлова, 15</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="light-box box-hover">
+              <h2><i class="fa fa-mobile"></i><span>Телефон</span></h2>
+              <p>+375 17 293 12 34</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="light-box box-hover">
+              <h2><i class="fa fa-paper-plane"></i><span>Электронная почта</span></h2>
+              <p><a href="#">belfilm@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="social-buttons">
+              <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" class="social-btn"><i class="fa fa-vk"></i></a></li>
+              <li><a href="#" class="social-btn"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="legals">
+              <li><a href="#">Условия эксплуатации</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 credit">
+            <p>2020 &copy; ООО "БелКино"</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/multiselect.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
